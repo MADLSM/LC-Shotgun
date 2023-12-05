@@ -35,7 +35,7 @@ namespace Gun
             shotgunP.BulletTrail = assetBundle.LoadAsset<GameObject>("hot trail");
 
 
-            Items.RegisterShopItem(shotgunItem, 0);
+            Items.RegisterShopItem(shotgunItem, 250);
             LethalLib.Modules.NetworkPrefabs.RegisterNetworkPrefab(shotgunItem.spawnPrefab);
 
             SceneManager.sceneLoaded += OnSceneLoaded;
